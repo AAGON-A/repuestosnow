@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // ════════════════════════════════════════════════════════════════
-//  ⚙️  CONFIGURACIÓN — CAMBIA ESTOS 3 VALORES Y LISTO
+//  ⚙️  CONFIGURACIÓN —Datos Personales
 // ════════════════════════════════════════════════════════════════
 const FORMSPREE_ID   = "meebkjrn";        // → formspree.io → New Form → copia el ID
 const WHATSAPP_NUM   = "+593XXXXXXXXX";       // → tu número EC sin + ni espacios
@@ -48,17 +48,17 @@ const MARCAS = [
 ];
 
 const PROCESO = [
-  { n:"01", t:"Pedís tu repuesto",     d:"Formulario o WhatsApp con nombre, marca y modelo.",          i:"📋" },
+  { n:"01", t:"Pides tu repuesto",     d:"Formulario o WhatsApp con nombre, marca y modelo.",          i:"📋" },
   { n:"02", t:"Cotización en 24h",     d:"Buscamos en Alemania y enviamos precio final con flete.",    i:"💬" },
-  { n:"03", t:"Confirmás y pagás 50%", d:"Transferencia o efectivo. Sin costos ocultos.",              i:"💳" },
+  { n:"03", t:"Confirmación y pago del 50%", d:"Transferencia/PayPal/Tarjeta de Crédito. Sin costos ocultos.",  i:"💳" },
   { n:"04", t:"Importamos para vos",   d:"Compramos, gestionamos DHL y el proceso aduanero completo.",i:"✈️" },
   { n:"05", t:"Entrega en Ecuador",    d:"Quito, Guayaquil o Cuenca. Domicilio o retiro en bodega.",  i:"📦" },
 ];
 
 const DIFERENCIADORES = [
-  { i:"🇩🇪", t:"100% piezas originales",    d:"Directo de distribuidores alemanes certificados. Sin copias, sin intermediarios asiáticos." },
-  { i:"⚡",  t:"Entrega en 7–12 días",       d:"Flete aéreo DHL Express. Del taller en Alemania al tuyo en Ecuador." },
-  { i:"✅",  t:"Garantía de autenticidad",   d:"Factura del proveedor europeo incluida en cada envío. Trazabilidad total." },
+  { i:"🇩🇪", t:"100% piezas originales",    d:"Directo de distribuidores alemanes certificados." },
+  { i:"⚡",  t:"Entrega en 7–20 días",       d:"Flete aéreo DHL Express. Del taller en Alemania al tuyo en Ecuador." },
+  { i:"✅",  t:"Garantía de autenticidad",   d:"Factura electrónica del proveedor europeo incluida en cada envío. Trazabilidad total." },
   { i:"💰",  t:"Hasta 40% más barato",       d:"Sin stock propio = sin sobreprecio de almacenaje. Precio directo de importación." },
   { i:"🔩",  t:"Cualquier referencia",       d:"Si existe en Alemania, lo conseguimos. Piezas descontinuadas, especiales, fuera de catálogo." },
   { i:"📞",  t:"Asesoría técnica incluida",  d:"Ingeniero mecánico con experiencia en Mercedes-Benz resuelve tus dudas." },
@@ -66,17 +66,17 @@ const DIFERENCIADORES = [
 
 const FAQS = [
   { q:"¿Cuánto tarda en llegar?",
-    a:"7–12 días hábiles desde la confirmación. Flete aéreo DHL: 3–5 días + trámite aduanero: 2–5 días." },
+    a:"7–20 días hábiles desde la confirmación. Flete aéreo DHL: 3–15 días + trámite aduanero: 2–5 días." },
   { q:"¿Cómo sé que la pieza es original?",
     a:"Cada envío incluye la factura del proveedor europeo con número de lote. Verificable directamente con el fabricante." },
   { q:"¿Qué pasa si la pieza no es la correcta?",
     a:"Si el error fue nuestro, hacemos el cambio sin costo. Si fue un error en la especificación, coordinamos la devolución." },
   { q:"¿Aceptan pedidos por volumen?",
-    a:"Sí. Para pedidos mayores a $500 aplicamos descuento especial. Escríbenos al WhatsApp para cotización de volumen." },
+    a:"Sí. Para pedidos mayores a $1500 aplicamos descuento especial. Escríbenos al WhatsApp para cotización de volumen." },
   { q:"¿Consiguen piezas que no están en el catálogo?",
     a:"Absolutamente. Si existe en Alemania, lo conseguimos. Solo necesitamos el número de parte OEM o descripción técnica." },
   { q:"¿Cuáles son las formas de pago?",
-    a:"Transferencia bancaria Banco Pichincha, efectivo en entrega (pedidos hasta $300). 50% al confirmar, 50% a la entrega." },
+    a:"Transferencia bancaria Banco Pichincha o pago mediante PayPal/Tarjeta de crédito." },
 ];
 
 // ── NAVBAR ────────────────────────────────────────────────────────────────────
