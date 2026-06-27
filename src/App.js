@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 // ════════════════════════════════════════════════════════════════
 //  ⚙️  CONFIGURACIÓN — CAMBIA ESTOS 3 VALORES Y LISTO
 // ════════════════════════════════════════════════════════════════
-const FORMSPREE_ID   = "TU_FORM_ID";        // → formspree.io → New Form → copia el ID
-const WHATSAPP_NUM   = "593XXXXXXXXX";       // → tu número EC sin + ni espacios
+const FORMSPREE_ID   = "meebkjrn";        // → formspree.io → New Form → copia el ID
+const WHATSAPP_NUM   = "+593XXXXXXXXX";       // → tu número EC sin + ni espacios
 const EMAIL_CONTACTO = "info@repuestosnow.com"; // → tu email real
 
 // ════════════════════════════════════════════════════════════════
